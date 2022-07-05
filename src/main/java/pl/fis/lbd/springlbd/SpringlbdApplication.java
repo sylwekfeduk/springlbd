@@ -12,12 +12,11 @@ import javax.annotation.PostConstruct;
 public class SpringlbdApplication {
 
 	@Autowired
-	@Qualifier("impl1")
 	private EmployeeService employeeService;
 
 	@PostConstruct
 	private void testFindAll() {
-		employeeService.findAll();
+		employeeService.getEmployeeNickname("Jan", "Kowalski");
 	}
 
 	public static void main(String[] args) {
