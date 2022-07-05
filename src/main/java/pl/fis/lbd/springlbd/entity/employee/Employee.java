@@ -2,7 +2,7 @@ package pl.fis.lbd.springlbd.entity.employee;
 
 public class Employee {
 
-    private long id;
+    private Long id;
     private String firstName;
     private String lastName;
     private long pesel;
