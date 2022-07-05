@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+import pl.fis.lbd.springlbd.entity.employee.Employee;
 
 import java.util.List;
 
@@ -36,7 +37,7 @@ public class EmployeeImpl1 implements EmployeeService {
     @Override
     public String getEmployeeNickname(String firstName, String lastName) {
         LOG.info("prefix: " + prefix + " suffix: " + suffix);
-        String nickname = prefix+firstName.substring(0,3)+lastName.substring(0,3)+suffix;
+        String nickname = prefix + firstName.substring(0, 3) + lastName.substring(0, 3) + suffix;
         LOG.info(nickname);
         return nickname;
     }
