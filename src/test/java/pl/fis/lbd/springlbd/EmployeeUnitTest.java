@@ -1,17 +1,14 @@
 package pl.fis.lbd.springlbd;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 import pl.fis.lbd.springlbd.service.employee.EmployeeImpl1;
-import pl.fis.lbd.springlbd.service.employee.EmployeeService;
 
-@SpringBootTest
+@SpringBootTest(classes = EmployeeImpl1.class)
 public class EmployeeUnitTest {
 
     @Autowired
