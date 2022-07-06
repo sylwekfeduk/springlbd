@@ -3,5 +3,5 @@ package pl.fis.lbd.SHcompany.repository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserStoryRepository {
+public interface UserStoryRepository {
 }
