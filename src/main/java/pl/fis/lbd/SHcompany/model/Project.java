@@ -9,5 +9,7 @@ public class Project {
     private Double estimatedPrice;
     private List<Technology> usedTechnology;
     private Team workingTeam;
+    private List<Sprint> listOfSprints;
+
 
 }
