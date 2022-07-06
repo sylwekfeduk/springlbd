@@ -7,8 +7,10 @@ import pl.fis.lbd.SHcompany.repository.SprintRepository;
 public class SprintService {
 
     private final SprintRepository sprintRepository;
+    private final UserStoryService userStoryService;
 
-    public SprintService(SprintRepository sprintRepository) {
+    public SprintService(SprintRepository sprintRepository, UserStoryService userStoryService) {
         this.sprintRepository = sprintRepository;
+        this.userStoryService = userStoryService;
     }
 }

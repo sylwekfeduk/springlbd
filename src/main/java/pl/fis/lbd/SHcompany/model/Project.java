@@ -11,5 +11,4 @@ public class Project {
     private Team workingTeam;
     private List<Sprint> listOfSprints;
 
-
 }
